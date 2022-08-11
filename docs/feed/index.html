@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Joel Dare</title>
+	<atom:link href="https://blog.joeldare.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.joeldare.com</link>
+	<description>Technology and other hobbies</description>
+	<lastBuildDate>Thu, 04 Jun 2020 18:43:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.10</generator>
+	<item>
+		<title>Creating an Install-Free Dock Icon for Zoom on Mac</title>
+		<link>https://blog.joeldare.com/creating-an-install-free-dock-icon-for-zoom-on-mac/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2020 17:49:11 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=388</guid>
+
+					<description><![CDATA[I wanted to create a special Dock Icon for Zoom that would open Google Chrome right to Zoom&#8217;s URL for joining a meeting. I&#8217;d prefer not to install any extra software when a website will suffice and you can use Zoom Teleconferencing without installing anything. To use Zoom from the web, just open the browser [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>I wanted to create a special Dock Icon for Zoom that would open Google Chrome right to Zoom&#8217;s URL for joining a meeting. I&#8217;d prefer not to install any extra software when a website will suffice and you can use Zoom Teleconferencing without installing anything.</p>
+
+
+
+<span id="more-388"></span>
+
+
+
+<p>To use Zoom from the web, just open the browser to <a href="https://zoom.us/join">https://zoom.us/join</a> and then click the <em>join from your browser</em> link.</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://blog.joeldare.com/wp-content/uploads/zoom-join-from-browser.png" alt="" class="wp-image-389"/></figure>
+
+
+
+<p>I use Zoom several times a day for work but my default browser is Firefox and the Zoom site doesn&#8217;t currently support audio when you&#8217;re using Firefox (or Safari). A direct link in my Dock makes Zoom a one-click operation.</p>
+
+
+
+<p>Follow these steps to create an icon that opens Google Chrome directly to the Zoom page for joining a meeting.</p>
+
+
+
+<ol><li>Open the <em>Script Editor</em> from <em>Applications</em>, <em>Utilities</em></li><li>Copy the code listed below into the editor</li><li>Select <em>File</em>, <em>Export</em> from the menu</li><li>Select <em>Application</em> as the <em>File Format</em></li><li>Save it into your <em>Applications</em> folder</li><li>Drag the application to your <em>Dock</em></li><li>Optionally, <a href="https://blog.joeldare.com/change-mac-os-application-icon">change the application icon</a></li></ol>
+
+
+
+<pre class="wp-block-code"><code>tell application "Google Chrome"
+activate
+open location "https://zoom.us/join"
+end tell</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Creating a Dock Icon that Opens Google Chrome on Mac</title>
+		<link>https://blog.joeldare.com/creating-a-dock-icon-that-opens-google-chrome-on-mac/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2020 17:17:36 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=381</guid>
+
+					<description><![CDATA[I use the following instructions to create a shortcut or symlink to a specific URL in a specific browser. This is useful when a website only works in Google Chrome, since I use Firefox as my default browser. Open the Script Editor from Applications, Utilities Copy the code listed below into the editor Select File, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>I use the following instructions to create a shortcut or symlink to a specific URL in a specific browser. This is useful when a website only works in Google Chrome, since I use <a href="https://www.mozilla.org/firefox">Firefox</a> as my default browser.</p>
+
+
+
+<span id="more-381"></span>
+
+
+
+<ol><li>Open the <em>Script Editor</em> from <em>Applications</em>, <em>Utilities</em></li><li>Copy the code listed below into the editor</li><li>Select <em>File</em>, <em>Export</em> from the menu</li><li>Select <em>Application</em> as the <em>File Format</em></li><li>Save it into your <em>Applications</em> folder</li><li>Drag the application to your <em>Dock</em></li><li>Optionally, <a href="https://blog.joeldare.com/change-mac-os-application-icon">change the application icon</a></li></ol>
+
+
+
+<pre class="wp-block-code"><code>tell application "Google Chrome"
+activate
+open location "https://zoom.us/join"
+end tell</code></pre>
+
+
+
+<h2>References</h2>
+
+
+
+<ul><li><a href="https://apple.stackexchange.com/questions/258033/how-to-change-the-default-application-for-webloc-files">Stack Exchange</a></li></ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Change Mac OS Application Icon</title>
+		<link>https://blog.joeldare.com/change-mac-os-application-icon/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2020 17:16:57 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=382</guid>
+
+					<description><![CDATA[You can use the following instructions to update the icon for any application. I typically use this for applications I created myself using the Script Editor. Right click (or two finger click) on the application Select Get Info from the drop-down menu Click on the icon in the top-left corner (not the preview) to select [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>You can use the following instructions to update the icon for any application. I typically use this for <a href="/creating-a-dock-icon-that-opens-google-chrome-on-mac">applications I created myself</a> using the Script Editor.</p>
+
+
+
+<span id="more-382"></span>
+
+
+
+<ul><li>Right click (or two finger click) on the application</li><li>Select <em>Get Info</em> from the drop-down menu</li><li>Click on the icon in the top-left corner (not the preview) to select it</li><li>Drag a new icon onto the icon you selected</li></ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Installing a Brother HL-2270DW Laser Printer in ChromeOS</title>
+		<link>https://blog.joeldare.com/installing-a-brother-hl-2270dw-laser-printer-in-chromeos/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Fri, 29 Nov 2019 02:23:38 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=330</guid>
+
+					<description><![CDATA[I recently purchased a Chromebook running ChromeOS and I needed to install my Brother HL-2270DW black and white laser printer. Getting it installed took a little bit of trial and error but here are the steps that worked for me. Open the Settings app Select Printing under Advanced Click the Set up button next to [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>I recently purchased a Chromebook running ChromeOS and I needed to install my Brother HL-2270DW black and white laser printer. Getting it installed took a little bit of trial and error but here are the steps that worked for me.</p>
+
+
+
+<span id="more-330"></span>
+
+
+
+<ul><li>Open the Settings app</li><li>Select <em>Printing</em> under <em>Advanced</em></li><li>Click the <em>Set up</em> button next to the <em>Brother HL-2270DW</em> which should automatically be listed under <em>Available printers to save</em></li><li>Select <em>Brother</em> as the <em>Manufacturer</em></li><li>Select <em>Brother HL-2170W</em> for the <em>Model</em> (this was the closest one)</li></ul>
+
+
+
+<p>The new printer should now be listed under <em>Saved printers</em>, but it probably won&#8217;t work, yet. We need to modify the settings a little bit.</p>
+
+
+
+<ul><li>Select the dots next to the <em>Brother HL-2270DW</em> and choose <em>Edit</em></li><li>Edit the <em>Address</em> field and change the port (the number after the colon) from <em>631 </em>to <em>9100</em></li><li>Change the <em>Protocol</em> to <em>AppSocket (TCP/IP)</em></li><li>Click <em>Save</em></li></ul>
+
+
+
+<p>Your printer should be working now. Give it a test print.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://blog.joeldare.com/wp-content/uploads/Screenshot-2019-11-28-at-7.11.22-PM.png" alt="" class="wp-image-332"/></figure>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Foldable Paper Phone Holder</title>
+		<link>https://blog.joeldare.com/foldable-paper-phone-holder/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2019 15:11:24 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=308</guid>
+
+					<description><![CDATA[This is a phone holder made out of a single sheet of paper. Print it, cut it out, fold it, and glue it together. For best results: Print it to a full sheet of paper Use a stiff paper or double it up (65lb is nice if you have it) Cut it out on the [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>This is a phone holder made out of a single sheet of paper. Print it, cut it out, fold it, and glue it together.</p>
+
+
+
+<span id="more-308"></span>
+
+
+
+<p>For best results:</p>
+
+
+
+<ul><li>Print it to a full sheet of paper</li><li>Use a stiff paper or double it up (65lb is nice if you have it)</li><li>Cut it out on the solid lines</li><li>Score the dashed lines with a push pin</li><li>Fold it</li><li>Use a toothpick to apply school glue</li><li>Glue the front up very last</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="https://blog.joeldare.com/wp-content/uploads/phone-holder-2.jpg" alt="" class="wp-image-313"/></figure>
+
+
+
+<p style="text-align:center"><a href="https://blog.joeldare.com/wp-content/uploads/phone-holder.pdf">Printable PDF File</a></p>
+
+
+
+<p>I designed the holder in <a href="http://www.openscad.org/">OpenSCAD</a>, exported it as an STL file, then unfolded it in <a href="https://tamasoft.co.jp/pepakura-en/">Pepakura Designer</a>.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://blog.joeldare.com/wp-content/uploads/Screen-Shot-2019-08-19-at-8.53.39-AM.png" alt="" class="wp-image-309"/></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Resources for Managers</title>
+		<link>https://blog.joeldare.com/resources-for-managers/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Wed, 14 Aug 2019 19:51:34 +0000</pubDate>
+				<category><![CDATA[Management]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=305</guid>
+
+					<description><![CDATA[So, I find myself a manager. I asked for this; it&#8217;s my own fault. I&#8217;m not sure I knew what I was getting into. I&#8217;m not any good but I&#8217;m trying. Below is a list of resources that I think have some good advice. The Feedback Equation https://larahogan.me/blog/feedback-equation/ Observation + Impact + Question / Request [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>So, I find myself a manager. I asked for this; it&#8217;s my own fault. I&#8217;m not sure I knew what I was getting into. I&#8217;m not any good but I&#8217;m trying. Below is a list of resources that I think have some good advice.</p>
+
+
+
+<span id="more-305"></span>
+
+
+
+<p><strong>The Feedback Equation</strong></p>
+
+
+
+<p><a href="https://larahogan.me/blog/feedback-equation/">https://larahogan.me/blog/feedback-equation/</a></p>
+
+
+
+<blockquote class="wp-block-quote"><p>Observation + Impact + Question / Request</p></blockquote>
+
+
+
+<blockquote class="wp-block-quote"><p>Observations can be recorded with a video camera. </p></blockquote>
+
+
+
+<blockquote class="wp-block-quote"><p>Asking a question often prompts the other person to find creative, new ways to address the impact of this behavior, without you having to make a request.</p></blockquote>
+
+
+
+<p><strong>Thinking Directions, Acting on Priorities</strong></p>
+
+
+
+<p><a href="https://www.thinkingdirections.com/category/time-management/">https://www.thinkingdirections.com/category/time-management/</a></p>
+
+
+
+<blockquote class="wp-block-quote"><p>Great leaders inspire the team with a clear, achievable vision, they carve out well-defined tasks for team members to do, and they support their team members with the resources they need to do the tasks</p></blockquote>
+
+
+
+<p><strong>Questions for 1-on-1&#8217;s</strong></p>
+
+
+
+<p><a href="https://github.com/VGraupera/1on1-questions">https://github.com/VGraupera/1on1-questions</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Forever Mile</title>
+		<link>https://blog.joeldare.com/the-forever-mile/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Fri, 29 Mar 2019 15:37:17 +0000</pubDate>
+				<category><![CDATA[Health]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=295</guid>
+
+					<description><![CDATA[The toes of my shoes dragged hard against the gravel pavement as it streaked under me. I held my body stiff. My legs stretched out slightly behind me, my arms stretched tightly to the motorcycle&#8217;s license plate frame in front of me. The rear tire, sprocket, and chain spun dangerously below my chest. We were [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The toes of my shoes dragged hard against the gravel pavement as it streaked under me. I held my body stiff. My legs stretched out slightly behind me, my arms stretched tightly to the motorcycle&#8217;s license plate frame in front of me. The rear tire, sprocket, and chain spun dangerously below my chest.</p>
+
+
+
+<span id="more-295"></span>
+
+
+
+<p>We were traveling at about 30 miles per hour when I bounced off the back seat. The rider noticed that I had fallen and smashed the brakes bringing us to a screeching stop. By then, I had been dragged about 50 feet.</p>
+
+
+
+<p>I was a pre-teen riding on the back of an older friends motorcycle. I jogged the 50 or so feet to my house. My Mom pulled off my destroyed sneakers and washed the wounds on the balls of my feet.</p>
+
+
+
+<p>That&#8217;s why I became a runner more than 30 years later.</p>
+
+
+
+<p>I&#8217;m an interval runner. I do short alternating periods of running and walking. I started later in life, at 40 years old, and I&#8217;m overweight and out of shape. When I started running I hadn&#8217;t run a full mile since high school. At first, it was hard, then it got a little easier. It&#8217;s easier but it&#8217;s still hard. After three years, I&#8217;m still slow, I run a mile in 14.5 minutes. But I run, and I have more energy.</p>
+
+
+
+<p>The Forever Mile is an interval pace that I can run &#8220;forever&#8221;. In reality, it depends on the day. I use it nearly every time I run. Over time, I&#8217;ve figured out that I need to run about 9 minutes, of each mile, in order to finish in under 15 minutes.</p>
+
+
+
+<p>So, I use the Forever Mile to keep pace. It looks like this.</p>
+
+
+
+<ul><li>Run for 1 minute</li><li>Walk for 45 seconds</li><li>Repeat 9 times</li></ul>
+
+
+
+<p>Over time I make adjustments to these numbers. When I started I could only run 15 to 30 seconds at a time. As my body got used to running the times increased. But I plateaued at around 2 minutes of running. I can push the numbers up so that I&#8217;m running 2 minutes and walking 30 seconds, but I can&#8217;t keep that pace in longer runs and losing pace gets me down.</p>
+
+
+
+<p>One option I&#8217;m considering right now is to have a little longer cool down period between miles.</p>
+
+
+
+<ul><li>Cool down for 1:30</li></ul>
+
+
+
+<p>I use the Android app Hybrid Interval Trainer (Workout Timer) by Javier Salmona. It works really well for keeping pace. I wear headphones and it makes announcements when I need to run and walk. It&#8217;s simple and it&#8217;s configurable.</p>
+
+
+
+<p>You might be wondering why a motorcycle accident, when I was young, caused me to start running when I was 40.</p>
+
+
+
+<p>In October of 2016, I had surgery on my foot to correct a hammertoe caused by that accident years before. I was in a stiff boot for about three months. There&#8217;s nothing like being unable to use your feet and legs to push you to appreciate them. For me, that meant committing to run and trying to be a little more healthy.</p>
+
+
+
+<p>In 2017 I ran 12.5 miles in a relay race called the Ragnar Wasatch Back.</p>
+
+
+
+<p>In 2018 I backed out of the same race due to a knee injury that was getting progressively worse during training. After a few months off I ran 6.4 miles in an experimental Ragnar race called The Sunset Experiment. This one was a trail race and it was a very difficult one for me.</p>
+
+
+
+<p>In 2019 I plan to run the Wasatch Back again. Maybe you&#8217;ll try interval training and I&#8217;ll see you out there.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Learn Programming by Making Art</title>
+		<link>https://blog.joeldare.com/learn-programming-by-making-art/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Mon, 18 Feb 2019 22:15:10 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<category><![CDATA[Zines]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=277</guid>
+
+					<description><![CDATA[A great way to learn programming is by typing someone else&#8217;s code. On this page you&#8217;ll make a simple abstract art piece by simply retyping this code. Along the way you&#8217;ll start to absorb some computer programming techniques. In the end you&#8217;ll create an art piece that&#8217;s fun to display and discuss. I’ve setup a [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>A great way to learn programming is by typing someone else&#8217;s code. On this page you&#8217;ll make a simple abstract art piece by simply retyping this code. Along the way you&#8217;ll start to absorb some computer programming techniques. In the end you&#8217;ll create an art piece that&#8217;s fun to display and discuss.</p>
+
+
+
+<span id="more-277"></span>
+
+
+
+<figure class="wp-block-image"><img src="https://blog.joeldare.com/wp-content/uploads/lines-preview.png" alt="" class="wp-image-278"/><figcaption>Completed Image</figcaption></figure>
+
+
+
+<p style="text-align:left">I’ve setup a blank project for you on CodePen, a tool that lets you write code online. Open the URL below to get started. The link should open in a new window so you can continue working through these instructions.</p>
+
+
+
+<p style="text-align:center"><a href="https://codepen.io/codazoda/pen/aPVGGx" target="_blank">https://codepen.io/codazoda/pen/aPVGGx</a></p>
+
+
+
+<p>Look for the box on that page that says JS. That&#8217;s where you&#8217;ll type the code below. You could print this page and work from the printed copy if that&#8217;s easier for you. The full code listing is below. There are a total of 45 lines.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://blog.joeldare.com/wp-content/uploads/lines-code.png" alt="" class="wp-image-279"/></figure>
+
+
+
+<p>Once you&#8217;ve typed in the code, the completed image should appear, automatically, on the right side of the page over at CodePen. If it doesn&#8217;t, then work through the code line-by-line double checking that you typed everything just right. You have to use the exact same characters, the same mix of uppercase and lowercase letters, and all the exact same punctuation.</p>
+
+
+
+<p>Once you&#8217;ve got an image and you&#8217;re happy with it, right click it and select <em>Save Image As</em> to save it to your computer. Print it and display it as a conversation starter.</p>
+
+
+
+<figure class="wp-block-image"><a href="https://splashofcode.com"><img src="https://blog.joeldare.com/wp-content/uploads/Blades-of-Grass-Stack-3D.jpg" alt="" class="wp-image-280"/></a><figcaption>If you enjoyed this project you might like the <a href="https://splashofcode.com">Splash of Code</a> series.</figcaption></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Don&#8217;t Buy my Zine</title>
+		<link>https://blog.joeldare.com/dont-buy-my-zine/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Sun, 17 Feb 2019 20:49:06 +0000</pubDate>
+				<category><![CDATA[Zines]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=263</guid>
+
+					<description><![CDATA[Just the other day I was reading /r/zines on Reddit and there was a post about other zine authors who were complaining about how difficult it was to create their zines. I was surprised that authors would complain about this because I love making zines myself and why else would you make them? Most of [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Just the other day I was reading <a href="https://www.reddit.com/r/zines/">/r/zines</a> on Reddit and there was a post about other zine authors who were complaining about how difficult it was to create their zines. I was surprised that authors would complain about this because I love making zines myself and why else would you make them?</p>
+
+
+
+<p>Most of mine have been half letter size zines. Over the past few weeks I&#8217;ve been creating a smaller version for my latest issue of <a href="https://gumroad.com/l/splashofcode/blog">Splash of Code</a>. This smaller size zine has been far more difficult to create and it takes forever to print, cut, and bind paper issues.</p>
+
+
+
+<span id="more-263"></span>
+
+
+
+<p>I created the smaller version because it has several advantages.</p>
+
+
+
+<ul><li>A 16 page zine can be printed on a single sheet of paper</li><li>The finished zine is easy to bind with staples</li><li>The small sized zines feel a little more personal</li><li>It&#8217;s cheaper to mail a small format zine</li></ul>
+
+
+
+<p>I have a <a href="https://amzn.to/2EfucTh">rotatable stapler</a> that makes creating half letter size zines easy. It&#8217;s a great little invention. It&#8217;s both cheaper and a lot less wieldy than the long reach staplers you typically see advertised for the purpose. This special stapler is completely unnecessary if you&#8217;re making a tiny zine because sandard desktop staplers have a 2&#8243; to 3&#8243; reach.</p>
+
+
+
+<p>Some of the small sized zine&#8217;s I&#8217;ve ordered come in #10 size or smaller envelopes. Two or three sheets of paper in this small size can be mailed in the U.S. right from your home mailbox for the price of a single postage stamp. As long as it&#8217;s smallish, flat, and less than an ounce, it can be shipped this way.</p>
+
+
+
+<p>But, as I got into creating my small size zine I ran into a few little problems I had to overcome.</p>
+
+
+
+<ul><li>Trimming content to fit within 16 small pages was a challenge</li><li>I couldn&#8217;t find booklet printing software</li><li>Cutting letter sheets requires a lot more labor</li></ul>
+
+
+
+<p>Before I even starting designing my zine I committed to creating 100 copies. Another zine I recently purchased had a space on the back for the author to number each one. I decided to add that feature so I built it right into the design. I was fully committed to printing 100 copies</p>
+
+
+
+<p>The first problem I ran into was space. I had to reduce font size but I couldn&#8217;t reduce it so far that it would become hard to read. Less words fit on a page and so I had to be more concise with my wording. I was also trying to cram my entire zine into 16 pages so that I could print it on a single two-sided sheet</p>
+
+
+
+<p>Besides being less wordy my zines have source code listings in them. Most of my source code, these days, is limited to about 120 characters wide. For zines I&#8217;ve got to compact it down to about half that. For this small format I had to go even smaller. I was having to get pretty creative with the way I wrote my code and it just wasn&#8217;t working. I finally decided to switch from portrait format to landscape and that gave me the little bit of extra space I needed to make it happen.</p>
+
+
+
+<p>Once I had the zine written I was ready to print the drafts. Normally I use booklet printing software to format my zines to four pages per sheet. Two on the front and two on the back. With this new layout I could no longer find software that would automatically layout my pages for me. It may exist, but I couldn&#8217;t work it out. This meant that I had to export my zine pages as individual images and manually stitch them together in the right order.</p>
+
+
+
+<p>With the layouts all figured out it was time to print a few copies. I made card stock cover sheets and the inside pages. Once printed I needed to chop the sheets into the individual signatures. I don&#8217;t have any special equipment for cutting paper so I decided to simply tear the pages. This turned out to be a pretty labor intensive process.</p>
+
+
+
+<p>The small finished zines did turn out pretty great. They&#8217;re rough and they&#8217;re personal. It will take quite a bit of work to print, tear, and bind 100 copies of this zine. The cost benefits are more than erased by the amount of time I&#8217;ll spend tearing sheets of paper apart.</p>
+
+
+
+<p>Will I try a small zine again? Probably. As one co-worker once told me, I like to do things the hard way.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Creating An Animated GIF from Images with ImageMagick</title>
+		<link>https://blog.joeldare.com/creating-an-animated-gif-from-images-with-imagemagick/</link>
+		
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Fri, 19 Oct 2018 14:38:54 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://blog.joeldare.com/?p=248</guid>
+
+					<description><![CDATA[I often convert a few individual images into an animated GIF. It&#8217;s a simple one-liner with ImageMagick. convert -delay 200 -loop 0 *.png animated.gif Step by Step Instructions Create a new folder called animated Put all of your original single images into the animated folder Open terminal and change to the animated folder Run the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I often convert a few individual images into an animated GIF. It&#8217;s a simple one-liner with ImageMagick.<br />
+<span id="more-248"></span></p>
+<pre><code>convert -delay 200 -loop 0 *.png animated.gif
+</code></pre>
+<h2>Step by Step Instructions</h2>
+<ul>
+<li>Create a new folder called <code>animated</code></li>
+<li>Put all of your original single images into the <code>animated</code> folder</li>
+<li>Open <code>terminal</code> and change to the <code>animated</code> folder</li>
+<li>Run the command above</li>
+</ul>
+<p>You should end up with a file called <code>animated.gif</code> that includes all of the <code>.png</code> images in your <code>animated</code> directory.</p>
+<h2>Command Breakdown</h2>
+<p>The <code>convert</code> command is included with ImageMagick. We use that command and then a few extra arguments to create our animated gif.</p>
+<ul>
+<li><code>-delay 200</code> creates a 2 second delay between each image</li>
+<li><code>-loop 0</code> causes the resulting gif to loop forever</li>
+<li><code>*.png</code> indicates that we want to combine all <code>.png</code> images in the current folder</li>
+<li><code>animated.gif</code> is the filename of the new animated gif</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
